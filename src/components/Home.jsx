@@ -13,7 +13,9 @@ export default function Home() {
       </div>
       <div  className="my">
         <h3 > I am Cherukuri Sashank,</h3>
-        <h2 > B.Sc. Computer Science Student</h2>
+        <h2 > B.Sc. Computer Science Student. I like to explore new things.repairing things ,painting ,art and craft works are my intrests.
+          
+        </h2>
       </div>
         
     </div>
