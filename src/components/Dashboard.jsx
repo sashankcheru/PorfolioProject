@@ -103,11 +103,10 @@ const AppBar = styled(MuiAppBar, {
     backgroundSize:' 400% 400%',
     animation: 'gradient-animation 5s ease infinite',
     padding: '20px',
-    width: '20%',
     height:"10%" ,
     margin: '0 auto',
     borderRadius:'15px',
-  //border: '2px solid red',
+  border: '2px solid red',
   transition: theme.transitions.create(['width', 'margin'], {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
@@ -214,8 +213,9 @@ export default function Dashboard() {
     <Box className="HomeContainer">
       <CssBaseline />
       <AppBar className="AppBar" position="fixed" open={drawerOpen}>
+        
         <Toolbar>
-          <IconButton
+        <IconButton
             color="inherit"
             aria-label="open drawer"
             onClick={handleDrawerOpen}
