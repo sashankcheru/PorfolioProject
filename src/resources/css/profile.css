@@ -1,0 +1,236 @@
+/* App.css */
+@font-face {
+    font-family: 'Morsey';
+    src: url('../fonts/Morsey\ Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'trophy';
+    src: url('../fonts/Trophy.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+/* Container */
+.ProfileContainer{
+    /* border: 5px solid red; */
+    position: relative;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+.ProfileData{
+    /* border: 2px solid green; */
+    width: 50%;
+    height: fit-content;
+    border-radius: 7px 7px 7px 7px;
+    padding: 1% 2% 2% 2%;
+    box-shadow: 2px 2px 21px rgba(243, 232, 13, 0.595);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+/* Header */
+.ProfileHeader{
+    width: 30%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.userName{
+    text-align: center;
+    font-family: trophy;
+    color: rgb(239, 169, 95);
+    margin-bottom: 0%;
+}
+.BioData{
+    width: 90%;
+}
+.BioData .userData{
+    padding: 0%;
+    margin: 0%;
+}
+.ProfilePicDiv{
+    text-align: center;
+}
+.profilePic{
+    background-color: rgb(237, 245, 251);
+    border-radius: 100%;
+    width: 30%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit:cover;
+    position: relative;
+    left: 77px;
+    top:5px;
+    margin-bottom:100px;
+}
+
+/* Body */
+.ProfileBody{
+    flex:1;
+    margin-left: 5%;
+    padding: 5%;
+} 
+.ProfileBody .form{
+    display: flex;
+    flex-direction: column;
+}
+.inputDiv{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    gap: 0%;
+    margin: 1%;
+}
+.inputDiv .profileInput{
+    position: relative;
+    width: 70%;
+    padding: 2%;
+    border-radius: 7px;
+    border: 1px solid rgb(226, 220, 220);
+}
+.inputFileDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+.inputDiv .Tag, .inputFileDiv .Tag{
+    padding: 0%;
+    margin: 0%;
+    margin-left: 2%;
+    font-weight: bold;
+    font-family: trophy;
+    color: rgb(117, 117, 229);
+}
+.FileInputDiv{
+    position: relative;
+    width: 100%;
+}
+.FileInputDiv .profilePicInput{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    opacity: 0;
+    cursor: pointer;
+}
+.IconBtn{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    width: 50%;
+    background-color: rgb(143, 218, 198);
+    border-radius: 12px;
+}
+.IconBtn .BtnIcon{
+    width: 30%;
+    height: auto;
+    justify-self: flex-start;
+}
+
+.FileInputDiv .ProxyBtn{
+    margin: 1%;
+    padding: 1%;
+    width: 80%;
+    cursor: pointer;
+    font-family: trophy;
+    border: none;
+    background-color: rgb(143, 218, 198);
+    color: white;
+    border-radius: 12px;
+}
+
+
+/* Footer */
+
+.SubmitBtn{
+    margin: 1%;
+    margin-top: 5%;
+    padding: 1%;
+    width: 30%;
+    cursor: pointer;
+    font-family: trophy;
+    border: none;
+    background-color: rgb(143, 143, 218);
+    color: white;
+    border-radius: 12px;
+
+/*     
+    animation-name: colorChange;
+    animation-duration: 4s ;
+    animation-fill-mode: forwards; */
+}
+
+@keyframes colorChange {
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: greenyellow;
+    }
+}
+.social-icons {
+    margin-top: 50px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+  }
+  /* profile.css */
+  .icon2 {
+    font-size: 40;
+    transition: transform 0.3s;
+  }
+
+
+/* Change color on hover */
+.Icon2:hover {
+    color: #ff5733; /* Change to another bright color like orange on hover */
+    transform: scale(1.2); /* Make the icon slightly bigger when hovered */
+}
+.styl{
+    color: rgb(255, 255, 255);
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    gap: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 80px;
+    
+}
+.hel{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    top:40px
+}
+.ProfileIcons {
+    width: 60px; /* Adjust the width to increase the size */
+    height: 60px; /* Adjust the height accordingly */
+    color: #ffc800;  /* Set a bright color, like pink */
+    margin-right: 15px; /* Space between icon and text */
+    transition: transform 0.3s, color 0.3s;
+    display: inline-block; /* Ensure it behaves as an inline element */
+    position: relative;
+    left: 500px;
+    margin-top:100px;
+}
+
+/* Change icon color on hover */
+.ProfileIcons:hover {
+    color: #00f7ff; /* Change to another bright color on hover */
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}

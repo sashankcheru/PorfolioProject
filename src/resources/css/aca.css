@@ -1,0 +1,30 @@
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animated-background {
+    background: linear-gradient(135deg,#18d061, #00f7ff ,#4457ad); /* Purple and Pink colors */
+    background-size: 400% 400%; /* Makes the gradient shift smoothly */
+    animation: gradient-animation 5s ease infinite; /* Animation timing */
+    padding: 20px; /* Content padding */
+    width: 50%; /* Width of the Paper or container */
+    margin: 0 auto; /* Centers the Paper in the middle */
+    border-radius:30px 30px 30px 30px;
+    
+}
+
+.fonts{
+     text-align: center;
+     color: #fff; 
+     font-family: Arial, sans-serif;
+}
+
+    

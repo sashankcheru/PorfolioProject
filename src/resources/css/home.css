@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.activeBtn{
+    background-color: rgb(228, 228, 228);
+}
+
+.sideMenuLinks{
+    text-decoration: none;
+    color: inherit;
+}
+
+.MainContainer{
+    display: flex;
+}
+.hello {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+   
+    position:relative;
+    margin: 0 auto;        /* Centers the container itself */
+    left: 70px;
+   
+   
+}
+
+
+/* .pro{
+     
+        display: block;
+        margin-left:150px;
+        margin-right: auto;
+        width: 50%;
+} */
+
+h3{
+    font-size: 3rem;
+}
+.style{
+       color: rgb(255, 255, 255);
+       font-family: 'Lobster', cursive;
+       font-size: 18px;
+       text-align: center;
+}
+.my {
+    background: linear-gradient(135deg, #18d061, #00f7ff,#00f7ff); /* Purple and Pink colors */
+    background-size: 400% 400%; 
+    animation: gradient-animation 5s ease infinite; /* Animation timing */
+    padding: 20px; 
+    -webkit-text-fill-color: black;
+    /* -webkit-background-clip: text; */
+    width: 50%; 
+    margin: 0 auto; 
+    border-radius:30px 30px 30px 30px;
+    position:relative;
+    top: -23px;
+    
+}

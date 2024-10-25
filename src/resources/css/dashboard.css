@@ -1,0 +1,88 @@
+@import url("./shared_animtion.css");
+
+:root{
+    --blueBtn: #0560FD;
+    --purpBtn: #00f7ff;
+}
+.activeOpenBtn{
+    background: linear-gradient(135deg,#18d061, #00f7ff ,#4457ad); /* Purple and Pink colors */
+    background-size: 400% 400%; /* Makes the gradient shift smoothly */
+    animation: gradient-animation 5s ease infinite; /* Animation timing */
+    transition: 0.2s all ease-in-out;
+    border-radius: 7px 7px 7px 7px;
+    transform: translateX(-2%) scale(0.8);
+}
+
+.activeCloseBtn{
+    
+    background: linear-gradient(135deg, #18d061, #00f7ff,#00f7ff);
+    color: white;
+    transition: 0.2s all ease-in-out;
+    border-radius: 7px 7px 7px 7px;
+    transform: scale(0.8);
+
+}
+
+.sideMenuContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sideFloatClass{
+    opacity: 0;
+    animation-name: slideLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    margin-top: 2%;
+}
+
+.sideMenuContainer .sideMenuLinks{
+    text-decoration: none;
+    color: inherit;
+}
+ 
+.HomeContainer{
+    display: flex;
+    height: 100vh;
+    /* background-image: url("../images/wallpaper1.jpg"); */
+    background-image: url("../images/wpp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+
+.SkeletonComponent{
+    margin-top: 2%;
+    margin-right: 1%;
+    backdrop-filter: blur(3px);
+    height: calc(100vh - 14%);
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius:  14px 14px 14px 14px;
+     background-color: rgba(255, 255, 255, 0.5); 
+    padding: 5%;
+}
+.SkeletonComponent .skeleton{
+    border-radius:  14px 14px 14px 14px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+ .MainComponent{
+    
+    border-radius:  14px 14px 14px 14px;
+    padding: 1%;
+    margin-top: 2%;
+    margin-right: 1%;
+    background-color: transparent;
+    height: calc(100vh - 14%);
+    overflow-x: hidden;
+    overflow-y: auto;
+   
+} 
+.lobster{
+    color: rgb(33, 199, 224);
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    text-align: center;
+}
